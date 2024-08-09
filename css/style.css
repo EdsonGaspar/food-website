@@ -90,3 +90,64 @@ header{
     transform: scale(1.1);
 }
 /* Header design End*/
+
+/* Aplicar em toda section */
+section{
+    padding: 70px 14% 60px;
+}
+
+/* Home design start */
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15,23,43, .9)), url(../img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-img img{
+    width: 80%;
+    height: auto;
+    animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home-text h1{
+    font-size: var(--bg-font);
+    width: 700;
+    height: 1.3;
+    margin-bottom: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    color: var(--main-color);
+    background: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .50s ease;
+}
+.btn i{
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+.btn:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: #c23838 0px 1px 25px;
+}
+/* Home design end */
