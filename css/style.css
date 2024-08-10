@@ -150,4 +150,42 @@ span{
     color: var(--text-color);
     box-shadow: #c23838 0px 1px 25px;
 }
+
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}
 /* Home design end */
+/* Container start */
+ .containner{
+    padding: 30px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+ }
+ .containner-box{
+    padding: 43px;
+    background: var(--other-color);
+    border-radius: 3rem;
+ }
+ .containner-box img{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+ }
+ .containner-box h3{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 16px 0;
+ } 
+ .containner-box a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    letter-spacing: 1px;
+    transition: all .50s ease;
+ }
+ .containner-box a:hover{
+    color: var(--text-color);
+ }
+/* Container end */
