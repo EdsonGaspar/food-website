@@ -189,3 +189,30 @@ header.sticky{
     color: var(--text-color);
  }
 /* Container end */
+
+
+/* About design start */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.about-img img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+.about-text h2{
+    color: var(--main-color);
+    line-height: 1.3;
+    font-size: var(--h2-font);
+    margin-bottom: 2rem;
+}
+.about-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+/* About design end */
