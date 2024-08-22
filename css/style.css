@@ -494,7 +494,8 @@ header.sticky{
         text-align: center;
     }
     .containner{
-        margin-top: 250px;
+        margin-top: 350px;
+        grid-template-columns: repeat(2, 1fr);
     }
     .about{
         grid-template-columns: 1fr;
@@ -521,7 +522,37 @@ header.sticky{
         background-size: cover;
     }
     .containner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 200px;
+    }
+    .contact-img img{
+        width: 100%;
+        max-width: 170px;
+        height: auto;
+    }
+    .shop-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .social i{
+        margin: 0 10px;
+
+    }
+    .col{
+        width: 100%;
+    }
+}
+@media(max-width: 440px){
+    .home{
+        height: 110vh;
+        gap: 0.1rem;
+    }
+    .containner{
+        margin-top: 300px;
     }
 }
 /* Responsive end*/
